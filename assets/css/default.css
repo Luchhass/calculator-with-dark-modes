@@ -1,5 +1,7 @@
 /* css reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -12,32 +14,48 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #3a4663;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
 a {
   text-decoration: none;
 }
-/* style */
-body {
-  background-color: #3A4663;
-}
 
+/* style */
 .container {
   width: 327px;
-  margin: 30px auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -61,11 +79,11 @@ body {
   line-height: 29.44px;
   letter-spacing: -0.5333333611488342px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .screen {
-  background-color: #181F33;
+  background-color: #181f33;
   min-width: 327px;
   min-height: 95px;
   border-radius: 12px;
@@ -79,11 +97,11 @@ body {
   line-height: 36.8px;
   letter-spacing: -0.6666666865348816px;
   text-align: right;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .process-mathematically {
-  background-color: #242D44;
+  background-color: #242d44;
   padding: 24px;
   border-radius: 12px;
   display: flex;
@@ -98,7 +116,7 @@ body {
 }
 
 .btn {
-  background-color: #EAE3DC;
+  background-color: #eae3dc;
   width: 60px;
   padding: 13px;
   font-size: 32px;
@@ -106,22 +124,22 @@ body {
   line-height: 29.44px;
   letter-spacing: -0.5333333611488342px;
   text-align: center;
-  color: #434A59;
+  color: #434a59;
   border: none;
   border-radius: 8px;
-  box-shadow: 0px -4px 0px 0px #B3A497 inset;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
   transition: 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #FFFFFE;
-  box-shadow: 0px -4px 0px 0px #B3A497 inset;
+  background-color: #fffffe;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
 }
 
 .btn-del {
   background-color: #647198;
-  color: #FFFFFF;
-  box-shadow: 0px -4px 0px 0px #414E73 inset;
+  color: #ffffff;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
   font-size: 20px;
   font-weight: 700;
   line-height: 18.4px;
@@ -131,8 +149,8 @@ body {
 }
 
 .btn-del:hover {
-  background-color: #A2B2E1;
-  box-shadow: 0px -4px 0px 0px #414E73 inset;
+  background-color: #a2b2e1;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
 }
 
 .process-end {
@@ -147,7 +165,7 @@ body {
   letter-spacing: -0.3333333432674408px;
   text-align: center;
   background-color: #647198;
-  box-shadow: 0px -4px 0px 0px #414E73 inset;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
   padding: 12px 22px;
   width: 133px;
   height: 64px;
@@ -157,12 +175,12 @@ body {
 }
 
 .sifirlama:hover {
-  background: #A2B2E1;
-  box-shadow: 0px -4px 0px 0px #414E73 inset;
+  background: #a2b2e1;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
 }
 
 .sifirlama a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .esittirbutton {
@@ -171,8 +189,8 @@ body {
   line-height: 18.4px;
   letter-spacing: -0.3333333432674408px;
   text-align: center;
-  background-color: #D03F2F;
-  box-shadow: 0px -4px 0px 0px #93261A inset;
+  background-color: #d03f2f;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
   padding: 12px 22px;
   width: 133px;
   height: 64px;
@@ -182,18 +200,17 @@ body {
 }
 
 .esittirbutton:hover {
-  background: #F96B5B;
-  box-shadow: 0px -4px 0px 0px #93261A inset;
+  background: #f96b5b;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
 }
 
 .esittirbutton a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-@media(width >= 1110px) {
+@media (width >= 1110px) {
   .container {
     width: 540px;
-    margin: 96px auto;
   }
 
   .screen {
@@ -214,11 +231,11 @@ body {
     padding: 32px;
     gap: 24px;
   }
-  
+
   .process {
     gap: 24px;
   }
-  
+
   .btn {
     width: 101px;
     height: 64px;
@@ -229,7 +246,7 @@ body {
     letter-spacing: -0.6666666865348816px;
     text-align: center;
   }
-  
+
   .btn-del {
     font-size: 28px;
     font-weight: 700;
@@ -241,7 +258,7 @@ body {
   .process-end {
     gap: 24px;
   }
-  
+
   .sifirlama {
     font-size: 28px;
     font-weight: 700;
@@ -251,11 +268,11 @@ body {
     width: 227px;
     height: 64px;
   }
-  
+
   .sifirlama a {
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  
+
   .esittirbutton {
     font-size: 28px;
     font-weight: 700;
@@ -265,8 +282,8 @@ body {
     width: 227px;
     height: 64px;
   }
-  
+
   .esittirbutton a {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
